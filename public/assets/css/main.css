@@ -4,6 +4,10 @@
   margin: 0px;
   font-size: 10px; }
 
+a {
+  text-decoration: none;
+  color: inherit; }
+
 .header {
   width: 100%;
   height: 100vh;
@@ -13,17 +17,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-end;
   padding: 0px 15px; }
   .header__h1 {
-    margin: 384px 15px 10px 15px;
-    font-size: 8rem;
+    width: 290px;
+    height: 110px;
+    margin-bottom: 10px;
+    font-size: 4.2rem;
     text-transform: capitalize;
     text-align: center;
-    color: #ffffff; }
+    color: #ffffff;
+    font-family: Roboto Slab, sans-serif;
+    line-height: 55px; }
   .header__h2 {
     color: #ffffff;
     font-size: 1.6rem;
-    margin-bottom: 45px; }
+    margin-bottom: 45px;
+    font-family: Roboto-Regular, sans-serif; }
   .header__arrow {
     width: 45px;
     height: 45px;
@@ -31,7 +41,8 @@
     background-color: #ffffff;
     display: flex;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    margin-bottom: 53px; }
     .header__arrow--img {
       width: 20px;
       height: 11.7px; }
@@ -48,5 +59,42 @@
   left: 0px; }
   .header__menu--img {
     width: 16px; }
+
+.hero {
+  margin: 30px 15px 45px 15px; }
+  .hero__section {
+    width: 100%;
+    height: 376px;
+    display: flex;
+    flex-direction: column; }
+    .hero__section--small {
+      font-size: 1.4rem;
+      font-family: Roboto-Regular, sans-serif;
+      line-height: 30px;
+      color: #8ccbea; }
+    .hero__section--h3 {
+      color: #000000;
+      text-transform: capitalize;
+      line-height: 30px;
+      font-family: Roboto Slab, sans-serif;
+      font-size: 2.4rem; }
+    .hero__section--text {
+      color: #4a4a4a;
+      font-size: 1.8rem;
+      font-family: Roboto-Regular, sans-serif;
+      line-height: 30px; }
+  .hero__nav {
+    width: 76px;
+    height: 45px;
+    border: solid #f26002 2px;
+    border-radius: 22.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .hero__nav--go {
+      color: #f26002;
+      font-family: Roboto-Regular, sans-serif;
+      font-size: 2rem;
+      line-height: 2.25; }
 
 /*# sourceMappingURL=main.css.map */

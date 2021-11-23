@@ -7,19 +7,25 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-end;
   padding: 0px 15px;
 
   &__h1 {
-    margin: 384px 15px 10px 15px;
-    font-size: 8rem;
+    width: 290px;
+    height: 110px;
+    margin-bottom: 10px;
+    font-size: 4.2rem;
     text-transform: capitalize;
     text-align: center;
     color: $PrincipalColor;
+    font-family: $typoTitle;
+    line-height: 55px;
   }
   &__h2 {
     color: $PrincipalColor;
     font-size: 1.6rem;
     margin-bottom: 45px;
+    font-family: $typoText;
   }
   &__arrow {
     width: 45px;
@@ -29,8 +35,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 53px;
 
-    // margin-bottom: 53px;
     &--img {
       width: 20px;
       height: 11.7px;
