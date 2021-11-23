@@ -2,7 +2,7 @@
   margin: 30px 15px 45px 15px;
   &__section {
     width: 100%;
-    height: 376px;
+    min-height: 376px;
     display: flex;
     flex-direction: column;
 
@@ -18,12 +18,14 @@
       line-height: 30px;
       font-family: $typoTitle;
       font-size: 2.4rem;
+      margin-bottom: 15px;
     }
     &--text {
       color: $TextColor2;
       font-size: 1.8rem;
       font-family: $typoText;
       line-height: 30px;
+      margin-bottom: 30px;
     }
   }
   &__nav {

@@ -1,0 +1,40 @@
+.main {
+  min-height: 320px;
+  background-color: $SecundaryColor;
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  &__h4 {
+    font-size: 2.4rem;
+    font-family: $typoTitle;
+    line-height: 45px;
+    text-transform: capitalize;
+    margin-bottom: 45px;
+  }
+  &__h5 {
+    font-size: 1.8rem;
+    font-family: $typoTitle;
+    line-height: 30px;
+  }
+  &__text {
+    font-size: 1.8rem;
+    font-family: $typoText;
+    line-height: 30px;
+    margin-bottom: 45px;
+  }
+  &__nav {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    &--more {
+      width: 184px;
+      height: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $BottomsColor;
+      color: $PrincipalColor;
+      border-radius: 22.5px;
+    }
+  }
+}
