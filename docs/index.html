@@ -14,9 +14,9 @@
 </head>
 
 <body>
-    <header class="header">
+    <header id="home" class="header">
         <div class="header__menu">
-            <a title="Web adalab" href="https://adalab.es/" target="_blank">
+            <a title="Adalab web" href="https://adalab.es/" target="_blank">
                 <img class="header__menu--img" src="assets/images/ico-menu.svg" alt="icono de menú">
             </a>
         </div>
@@ -26,8 +26,8 @@
         <h2 class="header__h2">In hac habitasse platea dictumst.</h2>
         <nav>
             <div class="header__arrow">
-                <a title="Navegacor hacia abajo" href="./index.html#more-reasons">
-                    <img title="Down arrow" class="header__arrow--img" src="assets/images/ico-scroll-down.svg"
+                <a title="Ir hacia abajo" href="./index.html#more-reasons">
+                    <img title="More reasons" class="header__arrow--img" src="assets/images/ico-scroll-down.svg"
                         alt="Flecha hacia abajo">
                 </a>
             </div>
@@ -46,55 +46,59 @@
                     sodales rutrum.
                 </p>
                 <nav>
-                    <div class="hero__nav"><a class="hero__nav--go" href="#">Go</a></div>
+                    <div class="hero__nav"><a title="Adalab Web" class="hero__nav--go" href="https://adalab.es"
+                            target="_blank">Go</a></div>
                 </nav>
             </div>
         </section>
-        <section>
-            <h4 id="more-reasons">
+        <section id="more-reasons" class="main">
+
+            <h4 class="main__h4">
                 3 Reasons to purchase
             </h4>
-            <ul>
-                <li>
-                    <h5>Ut sed metus</h5>
-                    <p>Lorem ipsum dolor sit amet, consecteur.</p>
-                </li>
-                <li>
-                    <h5>Curabitur ac erat</h5>
-                    <p>Mauris mattis urna quis lorem molestie.</p>
-                </li>
-                <li>
-                    <h5>Morbi dictum</h5>
-                    <p>Aliquam in dolor et dolor tincidunt.</p>
-                </li>
-                <li><a>More reasons</a></li>
-            </ul>
+            <h5 class="main__h5">Ut sed metus</h5>
+            <p class="main__text">Lorem ipsum dolor sit amet, consecteur.</p>
+            <h5 class="main__h5">Curabitur ac erat</h5>
+            <p class="main__text">Mauris mattis urna quis lorem molestie.</p>
+            <h5 class="main__h5">Morbi dictum</h5>
+            <p class="main__text">Aliquam in dolor et dolor tincidunt.</p>
+            <nav class="main__nav">
+                <div class="main__nav--more">
+                    <a href="https://adalab.es/" title="Adalab Web" target="_blank">More reasons</a>
+                </div>
+            </nav>
         </section>
     </main>
-    <footer>
-        <nav>
-            <img>
-        </nav>
-        <nav>
-            <ul>
-                <li><a>Articles</a></li>
-                <li><a>Books</a></li>
-                <li><a>Events</a></li>
-                <li><a>Reason</a></li>
-                <li><a>Tips</a></li>
+    <footer class="footer">
+
+        <div class="footer__arrow">
+            <nav>
+                <a title="Ir a Home" href="./index.html#home">
+                    <img title="Ir a Home" class="footer__arrow--img" src="assets/images/ico-arrow.svg"
+                        alt="Flecha hacia abajo">
+                </a>
+            </nav>
+        </div>
+        <nav class="footer__pagenav">
+            <ul class="footer__pagenav--list">
+                <li><a href="https://adalab.es" target="_blank">Articles</a></li>
+                <li><a href="https://adalab.es" target="_blank">Books</a></li>
+                <li><a href="https://adalab.es" target="_blank">Events</a></li>
+                <li><a href="https://adalab.es" target="_blank">Reason</a></li>
+                <li><a href="https://adalab.es" target="_blank">Tips</a></li>
             </ul>
         </nav>
-        <nav>
-            <ul>
-                <li><a>Articles</a></li>
-                <li><a>Books</a></li>
-                <li><a>Events </a></li>
-                <li><a>Reasons</a></li>
-                <li><a>Tips</a></li>
+        <nav class="footer__smnav">
+            <ul class="footer__smnav--list">
+                <li><a href="https://adalab.es" target="_blank">Twitter</a></li>
+                <li><a href="https://adalab.es" target="_blank">Instagram</a></li>
+                <li><a href="https://adalab.es" target="_blank">Mastodon.social </a></li>
+
             </ul>
         </nav>
-        <div><small> &#169; 2021</small>
-            <small> we &hearts; components</small>
+        <div class="footer__copy">
+            <small> &#169; 2021</small>
+            <small> we &#10084;&#65039; components</small>
         </div>
     </footer>
 
