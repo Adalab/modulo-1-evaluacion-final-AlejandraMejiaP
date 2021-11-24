@@ -5,11 +5,56 @@
   flex-direction: column;
   align-items: center;
   color: $PrincipalColor;
-  font-size: 1.6rem;
+
   font-family: $typoText;
   text-transform: uppercase;
   text-align: center;
   line-height: 30px;
+
+  @media (min-width: $tablet) {
+    max-height: 240px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: left;
+    padding-left: 39px;
+    padding-right: 39px;
+    &__arrow {
+      order: 4;
+      align-self: flex-start;
+      margin-right: 50px;
+      position: absolute;
+      left: 50%;
+    }
+    &__pagenav {
+      margin-top: 45px;
+      order: 3;
+      width: 210px;
+      font-size: 16px;
+    }
+    &__smnav {
+      width: 210px;
+      margin-top: 45px;
+      order: 4;
+      margin-right: 39px;
+      font-size: 16px;
+    }
+    &__copy {
+      width: 210px;
+      order: 2;
+      padding-bottom: 30px;
+      margin-top: 45px;
+      margin-left: 39px;
+      text-align: left;
+      display: flex;
+      flex-direction: row;
+      font-size: 14px;
+    }
+  }
+  @media (min-width: $desktop) {
+    padding-left: 360px;
+    padding-right: 360px;
+  }
   &__arrow {
     margin-bottom: 37px;
     width: 45px;
@@ -27,14 +72,17 @@
   }
   &__pagenav {
     margin-bottom: 30px;
+    font-size: 16px;
   }
   &__smnav {
     margin-bottom: 30px;
+    font-size: 16px;
   }
   &__copy {
     margin-bottom: 45px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-transform: lowercase;
+    font-size: 16px;
   }
 }

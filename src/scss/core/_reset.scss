@@ -2,11 +2,14 @@
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
-  font-size: 10px;
 }
+
 a {
   text-decoration: none;
   color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
 }
 ul {
   list-style: none;

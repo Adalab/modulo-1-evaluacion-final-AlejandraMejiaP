@@ -1,13 +1,17 @@
 .hero {
-  margin: 30px 15px 45px 15px;
+  padding-top: 30px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 45px;
+
   &__section {
     width: 100%;
-    min-height: 376px;
+
     display: flex;
     flex-direction: column;
 
     &--small {
-      font-size: 1.4rem;
+      font-size: 14px;
       font-family: $typoText;
       line-height: 30px;
       color: $SecundaryText;
@@ -17,12 +21,12 @@
       text-transform: capitalize;
       line-height: 30px;
       font-family: $typoTitle;
-      font-size: 2.4rem;
+      font-size: 24px;
       margin-bottom: 15px;
     }
     &--text {
       color: $TextColor2;
-      font-size: 1.8rem;
+      font-size: 18px;
       font-family: $typoText;
       line-height: 30px;
       margin-bottom: 30px;
@@ -36,11 +40,35 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.5s linear;
+    color: $BottomsColor;
+    &:hover {
+      background-color: $BottomsColor;
+      color: $PrincipalColor;
+    }
+    &:active {
+      transform: translateY(-1px);
+      box-shadow: 0 5px 10px $BottomsColor;
+    }
+
     &--go {
-      color: $BottomsColor;
       font-family: $typoText;
-      font-size: 2rem;
+      font-size: 20px;
       line-height: 2.25;
+    }
+  }
+  @media (min-width: $tablet) {
+    padding-top: 30px;
+    padding-right: 39px;
+    padding-left: 39px;
+    padding-bottom: 60px;
+
+    &__section--h3 {
+      font-size: 26px;
+    }
+    &__section--text {
+      width: 690px;
+      font-size: 20px;
     }
   }
 }

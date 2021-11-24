@@ -14,7 +14,7 @@
     width: 290px;
     height: 110px;
     margin-bottom: 10px;
-    font-size: 4.2rem;
+    font-size: 42px;
     text-transform: capitalize;
     text-align: center;
     color: $PrincipalColor;
@@ -23,10 +23,39 @@
   }
   &__h2 {
     color: $PrincipalColor;
-    font-size: 1.6rem;
+    font-size: 16px;
     margin-bottom: 45px;
     font-family: $typoText;
     font-weight: normal;
+  }
+  @media (min-width: $tablet) {
+    &__h1 {
+      min-height: 212px;
+      width: 690px;
+      font-size: 80px;
+      line-height: 106px;
+      text-align: center;
+      margin-top: 384px;
+      margin-bottom: 20px;
+    }
+    &__h2 {
+      min-height: 32px;
+      width: 360px;
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+    &__arrow {
+      margin-bottom: 45px;
+    }
+  }
+  @media (min-width: $desktop) {
+    &__h1 {
+      min-height: 264px;
+      width: 730px;
+      font-size: 100px;
+      line-height: 132px;
+      text-align: center;
+    }
   }
   &__arrow {
     width: 45px;
