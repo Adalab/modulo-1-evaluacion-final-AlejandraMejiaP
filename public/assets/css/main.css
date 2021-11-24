@@ -151,7 +151,9 @@ ul {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    transform: translatey(-20px); }
+    transform: translatey(-20px);
+    -webkit-animation: up-arrow 3s infinite;
+    animation: up-arrow 3s infinite; }
     .footer__arrow--img {
       vertical-align: middle; }
   .footer__pagenav {
@@ -166,6 +168,18 @@ ul {
     flex-direction: column;
     text-transform: lowercase;
     font-size: 16px; }
+
+@-webkit-keyframes up-arrow {
+  50% {
+    transform: rotate(360deg); }
+  20% {
+    transform: rotate(-360deg); } }
+
+@keyframes up-arrow {
+  50% {
+    transform: rotate(360deg); }
+  20% {
+    transform: rotate(-360deg); } }
 
 .main {
   min-height: 320px;

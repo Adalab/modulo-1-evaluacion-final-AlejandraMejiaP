@@ -55,6 +55,7 @@
     padding-left: 360px;
     padding-right: 360px;
   }
+
   &__arrow {
     margin-bottom: 37px;
     width: 45px;
@@ -66,10 +67,13 @@
     justify-content: center;
     align-items: center;
     transform: translatey(-20px);
+    animation: up-arrow 3s infinite;
+
     &--img {
       vertical-align: middle;
     }
   }
+
   &__pagenav {
     margin-bottom: 30px;
     font-size: 16px;
@@ -84,5 +88,13 @@
     flex-direction: column;
     text-transform: lowercase;
     font-size: 16px;
+  }
+}
+@keyframes up-arrow {
+  50% {
+    transform: rotate(360deg);
+  }
+  20% {
+    transform: rotate(-360deg);
   }
 }
